@@ -3475,6 +3475,8 @@ MonoBehaviour:
   timeToAttack: 1.5
   leftWhipObject: {fileID: 348670007}
   rightWhipObject: {fileID: 1192896370}
+  whipAttackSize: {x: 4, y: 2}
+  whipDamage: 1
 --- !u!1001 &2068143487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3546,7 +3548,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6198802600536572163, guid: 4f18cc4cd739be743bb1395a05f91fde, type: 3}
       propertyPath: speed
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6198802600536572163, guid: 4f18cc4cd739be743bb1395a05f91fde, type: 3}
       propertyPath: targetDestination
