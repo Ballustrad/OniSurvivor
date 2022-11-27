@@ -8,6 +8,11 @@ public class Character : MonoBehaviour
     public int currentHp = 1000;
     [SerializeField] StatusBar hpBar;
 
+    private void Start()
+    {
+        hpBar.SetState(currentHp, maxHp);
+    }
+
     public void TakeDamage(int damage)
     {
         currentHp -= damage;
@@ -28,5 +33,6 @@ public class Character : MonoBehaviour
         { 
             currentHp = maxHp; 
         }
+        hpBar.SetState(currentHp, maxHp);
     }
 }
