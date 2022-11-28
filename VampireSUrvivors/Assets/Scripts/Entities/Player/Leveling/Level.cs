@@ -35,7 +35,7 @@ public class Level : MonoBehaviour
         {
             experience -= To_Level_Up;
             level += 1;
-            experienceBar.SetLevelText(level);
+            experienceBar.SetLevelText(level); 
         }
     }
 }
