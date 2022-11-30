@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2231301992577574628}
   - component: {fileID: 3408766924729523731}
   - component: {fileID: 2231301992577574631}
+  - component: {fileID: -367524564588266212}
   m_Layer: 0
   m_Name: Health PickUp
   m_TagString: Untagged
@@ -128,3 +129,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4375
+--- !u!114 &-367524564588266212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2231301992577574632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e2cc4df70015b46beabcfbdc63cf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
