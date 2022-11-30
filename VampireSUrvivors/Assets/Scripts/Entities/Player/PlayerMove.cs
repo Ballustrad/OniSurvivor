@@ -22,13 +22,18 @@ public class PlayerMove : MonoBehaviour
         movementVector = new Vector3();
         animate = GetComponent<Animate>();
     }
-   
-    
+
+    private void Start()
+    {
+        lastHorizontalVector = -1f;
+        lastVerticalVector = -1f;
+    }
+
     void Update()
     {
         movementVector.x = Input.GetAxisRaw("Horizontal");
         movementVector.y = Input.GetAxisRaw("Vertical");
-
+        
         if(movementVector.x !=0)
         {
             lastHorizontalVector = movementVector.x;

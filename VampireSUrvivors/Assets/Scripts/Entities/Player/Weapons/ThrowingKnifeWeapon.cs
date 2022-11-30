@@ -8,7 +8,8 @@ public class ThrowingKnifeWeapon : MonoBehaviour
     [SerializeField] float timeToAttack;
     float timer;
 
-    [SerializeField] GameObject knifePrefab;
+    [SerializeField] GameObject knifePrefabRight;
+    [SerializeField] GameObject knifePrefabLeft;
 
     PlayerMove playerMove;
 
@@ -34,8 +35,19 @@ public class ThrowingKnifeWeapon : MonoBehaviour
 
     private void SpawnKnife()
     {
-        GameObject thrownKnife = Instantiate(knifePrefab);
-        thrownKnife.transform.position = transform.position;
-        thrownKnife.GetComponent<ThrowingKnifeProjectile>().SetDirection(playerMove.lastHorizontalVector, 0f);
+
+        if (playerMove.lastHorizontalVector == 1)
+        {
+            GameObject thrownKnife = Instantiate(knifePrefabRight);
+            thrownKnife.transform.position = transform.position;
+            thrownKnife.GetComponent<ThrowingKnifeProjectile>().SetDirection(playerMove.lastHorizontalVector, 0f);
+        }
+        else if (playerMove.lastHorizontalVector == -1)
+        {
+            GameObject thrownKnife = Instantiate(knifePrefabLeft);
+            thrownKnife.transform.position = transform.position;
+            thrownKnife.GetComponent<ThrowingKnifeProjectile>().SetDirection(playerMove.lastHorizontalVector, 0f);
+        }
+        
     }
 }

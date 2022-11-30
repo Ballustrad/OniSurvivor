@@ -3175,6 +3175,7 @@ GameObject:
   - component: {fileID: 1538655835}
   - component: {fileID: 1538655836}
   - component: {fileID: 1538655837}
+  - component: {fileID: 1538655838}
   - component: {fileID: 1538655828}
   - component: {fileID: 1538655834}
   m_Layer: 0
@@ -3293,6 +3294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 1000
   currentHp: 1000
+  armor: 0
   hpBar: {fileID: 1522596344}
   level: {fileID: 0}
   coins: {fileID: 0}
@@ -3323,6 +3325,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinAcquired: 0
   coinsCountText: {fileID: 807006816}
+--- !u!114 &1538655838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538655827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962d02a3f8e2aa3488d81705d496030b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  armorTest: {fileID: 11400000, guid: 3c571ea3619c6174bbbb0f12b5a6d816, type: 2}
 --- !u!1 &1539601477
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,7 +4519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToAttack: 1.5
-  knifePrefab: {fileID: 8916065096497824476, guid: b8f68a46f0d70fe48a9da314b9c0b713, type: 3}
+  knifePrefabRight: {fileID: 8916065096497824476, guid: b8f68a46f0d70fe48a9da314b9c0b713, type: 3}
+  knifePrefabLeft: {fileID: 1444977718144331440, guid: 6f9c61e29523ab5468a36c392a44d581, type: 3}
 --- !u!1 &2044230812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,7 +4537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2044230813
 Transform:
   m_ObjectHideFlags: 0
