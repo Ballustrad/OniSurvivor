@@ -13,7 +13,8 @@ public class ChangeScene : MonoBehaviour
     
     public void MoveToScene(int sceneID)
     {
-        SceneManager.LoadScene(sceneID);
+        SceneManager.LoadScene("essential", LoadSceneMode.Single);
+        SceneManager.LoadScene(sceneID, LoadSceneMode.Additive);
     }
     public void Quit()
     {
