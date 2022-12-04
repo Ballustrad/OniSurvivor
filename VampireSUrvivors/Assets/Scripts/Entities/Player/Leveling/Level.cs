@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using Random = UnityEngine.Random;
+
 public class Level : MonoBehaviour
 {
     int level = 1;
@@ -10,6 +12,7 @@ public class Level : MonoBehaviour
     [SerializeField] ExperienceBar experienceBar;
     [SerializeField] UpgradePanelManager upgradePanel;
 
+    [SerializeField] List<UpgradeData> upgrades;
     int To_Level_Up
     {
         get
@@ -40,9 +43,27 @@ public class Level : MonoBehaviour
 
     private void LevelUp()
     {
-        upgradePanel.OpenPanel();
+        upgradePanel.OpenPanel(GetUpgrades(4));
         experience -= To_Level_Up;
         level += 1;
         experienceBar.SetLevelText(level);
+    }
+
+    public List<UpgradeData> GetUpgrades(int count)
+    {
+        List<UpgradeData> upgradeList = new List<UpgradeData>();
+
+        if (count > upgrades.Count)
+        {
+            count = upgrades.Count;
+        }
+
+        for (int i = 0; i < count; i++)
+        {
+            upgradeList.Add(upgrades[Random.Range(0, upgrades.Count)]);
+        }
+        
+
+        return upgradeList;
     }
 }
