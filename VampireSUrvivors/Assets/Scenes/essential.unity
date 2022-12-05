@@ -3484,6 +3484,8 @@ MonoBehaviour:
   maxHp: 1000
   currentHp: 1000
   armor: 0
+  hpRegenerationRate: 1
+  hpRegenerationTimer: 0
   hpBar: {fileID: 1522596344}
   level: {fileID: 0}
   coins: {fileID: 0}
@@ -3559,7 +3561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponObjectContainer: {fileID: 1340981170}
-  startingWeapon: {fileID: 11400000, guid: 09f4079ad5b8a704c9ef01e87e7680f0, type: 2}
+  startingWeapon: {fileID: 11400000, guid: fe4413f87c0386d4c98e7df1a1bea203, type: 2}
 --- !u!1 &1539601477
 GameObject:
   m_ObjectHideFlags: 0
