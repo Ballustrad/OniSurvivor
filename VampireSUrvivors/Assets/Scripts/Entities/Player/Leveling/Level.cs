@@ -13,6 +13,16 @@ public class Level : MonoBehaviour
     [SerializeField] UpgradePanelManager upgradePanel;
 
     [SerializeField] List<UpgradeData> upgrades;
+
+    List<UpgradeData> selectedUpgrades;
+    [SerializeField] List<UpgradeData> aquiredUpgrades;
+
+    WeaponManager weaponManager;
+
+    private void Awake()
+    {
+        weaponManager = GetComponent<WeaponManager>();
+    }
     int To_Level_Up
     {
         get
@@ -33,6 +43,32 @@ public class Level : MonoBehaviour
         experienceBar.UpdateExperienceSlider(experience, To_Level_Up);
     }
 
+    public void Upgrade(int selectedUpgradeId)
+    {
+        UpgradeData upgradeData = selectedUpgrades[selectedUpgradeId];
+
+        if (aquiredUpgrades == null) { aquiredUpgrades = new List<UpgradeData>();  }
+
+        switch (upgradeData.upgradeType)
+        {
+            case UpgradeType.WeaponUpgrade:
+                break;
+            case UpgradeType.ItemUpgrade:
+                break;
+            case UpgradeType.WeaponUnlock:
+                weaponManager.AddWeapon(upgradeData.weaponData);
+                break;
+            case UpgradeType.ItemUnlock:
+                break;
+        }
+
+
+
+
+        aquiredUpgrades.Add(upgradeData);
+        upgrades.Remove(upgradeData);
+    }
+
     public void CheckLevelUp()
     {
         if (experience >= To_Level_Up)
@@ -43,7 +79,12 @@ public class Level : MonoBehaviour
 
     private void LevelUp()
     {
-        upgradePanel.OpenPanel(GetUpgrades(4));
+        if (selectedUpgrades == null) {  selectedUpgrades = new List<UpgradeData>(); }  
+        selectedUpgrades.Clear();
+        selectedUpgrades.AddRange(GetUpgrades(4));
+
+
+        upgradePanel.OpenPanel(selectedUpgrades);
         experience -= To_Level_Up;
         level += 1;
         experienceBar.SetLevelText(level);
@@ -65,5 +106,10 @@ public class Level : MonoBehaviour
         
 
         return upgradeList;
+    }
+
+    internal void AddUpgradesIntoTheListOfAvailableUpgrades(List<UpgradeData> upgradesToAdd)
+    {
+        this.upgrades.AddRange(upgradesToAdd);
     }
 }

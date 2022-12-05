@@ -17,3 +17,7 @@ MonoBehaviour:
     damage: 100
     timeToAttack: 2
   weaponBasePrefab: {fileID: 2625193647034859873, guid: a6af11f4c68694f4fa5947c22dfd3a9d, type: 3}
+  upgrades:
+  - {fileID: 11400000, guid: fdc44782f36958b4d901650673b0726c, type: 2}
+  - {fileID: 11400000, guid: 015b36d4c3cc74a40ab23a9bcccff1b5, type: 2}
+  - {fileID: 11400000, guid: dbec5814cc37ae4488b37860ba4a5e0a, type: 2}
