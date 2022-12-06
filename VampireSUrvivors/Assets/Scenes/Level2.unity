@@ -1465,6 +1465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138971198}
   - component: {fileID: 1138971199}
+  - component: {fileID: 1138971200}
   m_Layer: 0
   m_Name: ---WORLD---
   m_TagString: Untagged
@@ -1514,6 +1515,19 @@ MonoBehaviour:
   terrainTileVerticalCount: 3
   fieldOfVisionHeight: 3
   fieldOfVisionWidth: 3
+--- !u!114 &1138971200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138971197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37153bde30150c041b424016f158fb53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
 --- !u!1001 &1232293350
 PrefabInstance:
   m_ObjectHideFlags: 0

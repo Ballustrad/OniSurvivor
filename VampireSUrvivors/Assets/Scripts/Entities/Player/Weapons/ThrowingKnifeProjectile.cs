@@ -8,6 +8,7 @@ public class ThrowingKnifeProjectile : MonoBehaviour
     [SerializeField] float speed;
     public int damage = 5;
 
+    float ttl = 6f;
 
     public void SetDirection(float dir_x, float dir_y)
     {
@@ -35,6 +36,7 @@ public class ThrowingKnifeProjectile : MonoBehaviour
                 Enemy enemy = c.GetComponent<Enemy>();
                 if (enemy != null)
                 {
+                    
                     enemy.TakeDamage(damage);
                     hitDetected = true;
                     break;
@@ -44,6 +46,12 @@ public class ThrowingKnifeProjectile : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+
+       ttl -= Time.deltaTime;   
+        if (ttl < 0f)
+        {
+            Destroy(gameObject);
         }
            
         
