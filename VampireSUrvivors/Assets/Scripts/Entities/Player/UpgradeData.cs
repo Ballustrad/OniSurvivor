@@ -7,8 +7,8 @@ public enum UpgradeType
 {
     WeaponUpgrade,
     ItemUpgrade,
-    WeaponUnlock,
-    ItemUnlock
+    WeaponGet,
+    ItemGet
     
 }
 
