@@ -20,6 +20,12 @@ public class EnemyStats
         this.experience_reward = stats.experience_reward;
         this.moveSpeed = stats.moveSpeed;
     }
+
+    internal void ApplyProgress(float progress)
+    {
+        this.hp = (int)(hp * progress);
+        this.damage = (int)(damage * progress);  
+    }
 }
 
 
@@ -90,5 +96,10 @@ public class Enemy : MonoBehaviour, IDamageable
     internal void SetStats(EnemyStats stats)
     {
         this.stats = new EnemyStats(stats);
+    }
+
+    internal void UpdateStatsForProgress(float progress)
+    {
+        stats.ApplyProgress(progress);
     }
 }
