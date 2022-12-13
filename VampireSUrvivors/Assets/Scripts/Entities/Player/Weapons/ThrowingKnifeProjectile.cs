@@ -36,7 +36,7 @@ public class ThrowingKnifeProjectile : MonoBehaviour
                 Enemy enemy = c.GetComponent<Enemy>();
                 if (enemy != null)
                 {
-                    
+                    PostDamage(damage, transform.position);
                     enemy.TakeDamage(damage);
                     hitDetected = true;
                     break;
@@ -56,5 +56,11 @@ public class ThrowingKnifeProjectile : MonoBehaviour
            
         
 
+    }
+
+
+    public void PostDamage(int damage, Vector3 worldPosition)
+    {
+        MessageSystem.instance.PostMessage(damage.ToString(), worldPosition);   
     }
 }

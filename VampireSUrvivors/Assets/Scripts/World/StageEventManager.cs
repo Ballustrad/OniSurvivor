@@ -20,11 +20,21 @@ public class StageEventManager : MonoBehaviour
 
         if(stageTime.time > stageData.stageEvents[eventIndexer].time)
         {
-            Debug.Log(stageData.stageEvents[eventIndexer].message);
-            for (int i = 0; i < stageData.stageEvents[eventIndexer].count; i++)
+            switch (stageData.stageEvents[eventIndexer].eventType)
             {
-                enemiesManager.SpawnEnemy(stageData.stageEvents[eventIndexer].enemyToSpawn);
+                case StageEventType.SpawnEnemy:
+                    for (int i = 0; i < stageData.stageEvents[eventIndexer].count; i++)
+                    {
+                        enemiesManager.SpawnEnemy(stageData.stageEvents[eventIndexer].enemyToSpawn);
+                    }
+                    break;
+                case StageEventType.SpawnObject:
+                    break;
+                case StageEventType.WinStage:
+                    break;
             }
+            Debug.Log(stageData.stageEvents[eventIndexer].message);
+            
              
 
             eventIndexer += 1;
