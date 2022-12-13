@@ -33,7 +33,7 @@ public class ThrowingKnifeProjectile : MonoBehaviour
             Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, 0.3f);
             foreach (Collider2D c in hit)
             {
-                Enemy enemy = c.GetComponent<Enemy>();
+                IDamageable enemy = c.GetComponent<IDamageable>();
                 if (enemy != null)
                 {
                     PostDamage(damage, transform.position);

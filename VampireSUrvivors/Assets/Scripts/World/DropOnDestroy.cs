@@ -16,9 +16,21 @@ public class DropOnDestroy : MonoBehaviour
     {
 
         if (isQuitting) { return; }
+
+        if (dropItemPrefab.Count <= 0)
+        {
+            Debug.LogWarning("List of drop Item is Empty"); 
+        }
+
+
         if (Random.value < chance)
         {
             GameObject toDrop = dropItemPrefab[Random.Range(0, dropItemPrefab.Count)];
+
+            if (toDrop == null)
+            {
+                Debug.LogWarning("DropOnDestroy, reference to dropped item is null! Check the prefab of the object...");
+            }
             SpawnManager.instance.SpawnObject(transform.position, toDrop);    
         }
     }
