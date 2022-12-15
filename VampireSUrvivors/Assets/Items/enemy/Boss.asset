@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Boss
   m_EditorClassIdentifier: 
   Name: 
-  animatedPrefab: {fileID: 0}
+  animatedPrefab: {fileID: 5226554367885025970, guid: b79429de4494fc5438406a711ee4677d, type: 3}
   stats:
-    hp: 0
-    damage: 0
+    hp: 1000
+    damage: 25
     experience_reward: 0
-    moveSpeed: 0
+    moveSpeed: 2

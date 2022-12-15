@@ -70,7 +70,7 @@ MonoBehaviour:
   - eventType: 0
     time: 60
     message: 
-    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    enemyToSpawn: {fileID: 11400000, guid: b85c8b9b8aa4ef34e8e171b739415fd8, type: 2}
     objectToSpawn: {fileID: 0}
     count: 1
   - eventType: 1

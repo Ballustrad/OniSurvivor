@@ -462,6 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5297e8e2b70d1409c144464b400bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stageProgress: {fileID: 0}
   enemy: {fileID: 6198802600536572164, guid: 4f18cc4cd739be743bb1395a05f91fde, type: 3}
   spawnArea: {x: 15, y: 8}
   spawnTimer: 2
@@ -480,6 +481,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &473337239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473337240}
+  - component: {fileID: 473337241}
+  m_Layer: 0
+  m_Name: ---Objects---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473337240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473337239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.21671674, y: 0.76306295, z: 19.961975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &473337241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473337239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac606f50393f91478426e39b96fef8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &495271844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1466,6 +1511,8 @@ GameObject:
   - component: {fileID: 1138971198}
   - component: {fileID: 1138971199}
   - component: {fileID: 1138971200}
+  - component: {fileID: 1138971201}
+  - component: {fileID: 1138971202}
   m_Layer: 0
   m_Name: ---WORLD---
   m_TagString: Untagged
@@ -1528,6 +1575,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
+--- !u!114 &1138971201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138971197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0aec310c0ed9f04ca8f722d5403a82b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageData: {fileID: 0}
+  enemiesManager: {fileID: 365303083}
+--- !u!114 &1138971202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138971197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a07cb41411f344b97bf77fbc4f2b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressTimeRate: 30
+  progressPerSplit: 0.2
 --- !u!1001 &1232293350
 PrefabInstance:
   m_ObjectHideFlags: 0
