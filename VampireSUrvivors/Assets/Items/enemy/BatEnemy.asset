@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Bat
   animatedPrefab: {fileID: 4988756399798627738, guid: 12bbe470c30cb174e93d362c6ee0ceac, type: 3}
   stats:
-    hp: 200
+    hp: 50
     damage: 1
     experience_reward: 400
-    moveSpeed: 3
+    moveSpeed: 2

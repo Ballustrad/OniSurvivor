@@ -15,31 +15,79 @@ MonoBehaviour:
   stageEvents:
   - eventType: 0
     time: 5
-    message: Hello
+    message: 
     enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
     objectToSpawn: {fileID: 0}
-    count: 3
+    count: 5
   - eventType: 0
     time: 10
-    message: This is 10seconds message
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    objectToSpawn: {fileID: 0}
+    count: 7
+  - eventType: 0
+    time: 15
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    objectToSpawn: {fileID: 0}
+    count: 10
+  - eventType: 0
+    time: 20
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    objectToSpawn: {fileID: 0}
+    count: 20
+  - eventType: 0
+    time: 30
+    message: 
     enemyToSpawn: {fileID: 11400000, guid: b4ec3363fbf880543a1a2092ad83aaa9, type: 2}
     objectToSpawn: {fileID: 0}
     count: 10
   - eventType: 0
-    time: 15
-    message: This is goodbye!
+    time: 30
+    message: 
     enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
     objectToSpawn: {fileID: 0}
-    count: 25
+    count: 10
+  - eventType: 0
+    time: 40
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    objectToSpawn: {fileID: 0}
+    count: 50
+  - eventType: 0
+    time: 75
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    objectToSpawn: {fileID: 0}
+    count: 20
+  - eventType: 0
+    time: 90
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    objectToSpawn: {fileID: 0}
+    count: 30
+  - eventType: 0
+    time: 60
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 9bb5b02ec36ff39478964dc17d87eb29, type: 2}
+    objectToSpawn: {fileID: 0}
+    count: 1
   - eventType: 1
-    time: 20
-    message: This is goodbye!
+    time: 120
+    message: 
     enemyToSpawn: {fileID: 0}
     objectToSpawn: {fileID: 9016193393749670317, guid: ac24e43d79403d34f85abb7f0eb07718, type: 3}
-    count: 25
+    count: 15
+  - eventType: 1
+    time: 60
+    message: 
+    enemyToSpawn: {fileID: 0}
+    objectToSpawn: {fileID: 9016193393749670317, guid: ac24e43d79403d34f85abb7f0eb07718, type: 3}
+    count: 10
   - eventType: 2
-    time: 10
-    message: This is goodbye!
+    time: 130
+    message: 
     enemyToSpawn: {fileID: 0}
     objectToSpawn: {fileID: 0}
     count: 0

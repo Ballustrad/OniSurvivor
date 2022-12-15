@@ -4132,7 +4132,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1881935635, guid: da633dc3509407d4398b1ab885d5f032, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5338ae49105ba74499ffe1573f9d6333, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4398,7 +4398,7 @@ MonoBehaviour:
   currentHp: 1000
   armor: 0
   hpRegenerationRate: 1
-  hpRegenerationTimer: 0
+  hpRegenerationTimer: 0.2
   hpBar: {fileID: 1522596344}
   level: {fileID: 0}
   coins: {fileID: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: DarkWizard
   animatedPrefab: {fileID: 5410576186582438937, guid: e80d821837d711e43a69c8f528c4a8e1, type: 3}
   stats:
-    hp: 1000
-    damage: 1
+    hp: 200
+    damage: 2
     experience_reward: 400
-    moveSpeed: 1
+    moveSpeed: 0.7
