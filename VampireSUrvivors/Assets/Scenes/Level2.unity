@@ -462,8 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5297e8e2b70d1409c144464b400bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageProgress: {fileID: 0}
-  enemy: {fileID: 6198802600536572164, guid: 4f18cc4cd739be743bb1395a05f91fde, type: 3}
+  stageProgress: {fileID: 1138971202}
+  enemy: {fileID: 3494524265787329577, guid: 464a22661c03ce6449edc38f58ed5d24, type: 3}
   spawnArea: {x: 15, y: 8}
   spawnTimer: 2
 --- !u!4 &365303084
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.8207547, g: 0.24115811, b: 0.19667137, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0aec310c0ed9f04ca8f722d5403a82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageData: {fileID: 0}
+  stageData: {fileID: 11400000, guid: 14a6b43118e0efc4183cd7dc04a1fed9, type: 2}
   enemiesManager: {fileID: 365303083}
 --- !u!114 &1138971202
 MonoBehaviour:

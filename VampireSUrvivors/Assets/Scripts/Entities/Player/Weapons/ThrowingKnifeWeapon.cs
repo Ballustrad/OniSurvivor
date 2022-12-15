@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class ThrowingKnifeWeapon : WeaponBase
 {
-    
+    public AudioSource audioSource;
+    public AudioClip clip;
     [SerializeField] GameObject knifePrefabRight;
     [SerializeField] GameObject knifePrefabLeft;
     [SerializeField] float spread = 0.5f;
@@ -25,6 +26,7 @@ public class ThrowingKnifeWeapon : WeaponBase
     {
         for (int i = 0; i < weaponStats.numberOfAttacks; i++)
         {
+            audioSource.PlayOneShot(clip);
             if (playerMove.lastHorizontalVector == 1)
             {
                 GameObject thrownKnife = Instantiate(knifePrefabRight);

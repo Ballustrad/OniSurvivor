@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WhipWeapon : WeaponBase
 {
-    
+    public AudioSource audioSource;
+    public AudioClip clip;
 
     [SerializeField] GameObject leftWhipObject;
     [SerializeField] GameObject rightWhipObject;
@@ -59,6 +60,7 @@ public class WhipWeapon : WeaponBase
                 Collider2D[] colliders = Physics2D.OverlapBoxAll(leftWhipObject.transform.position, attackSize, 0f);
                 ApplyDamage(colliders);
             }
+            audioSource.PlayOneShot(clip);
             yield return new WaitForSeconds(0.3f);
         }
         

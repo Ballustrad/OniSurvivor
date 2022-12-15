@@ -77,13 +77,13 @@ MonoBehaviour:
     time: 120
     message: 
     enemyToSpawn: {fileID: 0}
-    objectToSpawn: {fileID: 9016193393749670317, guid: ac24e43d79403d34f85abb7f0eb07718, type: 3}
+    objectToSpawn: {fileID: 5152664389760881085, guid: 4b73a92b801ce9d418682a28340d8061, type: 3}
     count: 15
   - eventType: 1
     time: 60
     message: 
     enemyToSpawn: {fileID: 0}
-    objectToSpawn: {fileID: 9016193393749670317, guid: ac24e43d79403d34f85abb7f0eb07718, type: 3}
+    objectToSpawn: {fileID: 5152664389760881085, guid: 4b73a92b801ce9d418682a28340d8061, type: 3}
     count: 10
   - eventType: 2
     time: 130
