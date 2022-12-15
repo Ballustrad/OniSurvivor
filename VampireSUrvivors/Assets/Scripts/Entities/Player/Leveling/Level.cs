@@ -7,6 +7,8 @@ using Random = UnityEngine.Random;
 
 public class Level : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip clip;
     int level = 1;
     int experience = 0;
     [SerializeField] ExperienceBar experienceBar;
@@ -91,7 +93,7 @@ public class Level : MonoBehaviour
         if (selectedUpgrades == null) {  selectedUpgrades = new List<UpgradeData>(); }  
         selectedUpgrades.Clear();
         selectedUpgrades.AddRange(GetUpgrades(4));
-
+        audioSource.PlayOneShot(clip);
 
         upgradePanel.OpenPanel(selectedUpgrades);
         experience -= To_Level_Up;
