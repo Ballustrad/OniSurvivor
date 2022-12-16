@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3ad804dc4d8f4f46bc5f79f6fe505c1, type: 3}
-  m_Name: ThrowingKnife(BluntStunDamage)
+  m_Name: ThrowingKnife(MoreDamage) 1
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: Blunt Throwing Knife
-  icon: {fileID: 21300000, guid: b20db1b2d1124ff4397cb0a590473319, type: 3}
+  Name: MoreDamage
+  icon: {fileID: 21300000, guid: 2fc213f142308ea409a4e87f640f1cd8, type: 3}
   weaponData: {fileID: 11400000, guid: fe4413f87c0386d4c98e7df1a1bea203, type: 2}
   weaponUpgradeStats:
-    damage: 0
+    damage: 250
     timeToAttack: 0
-    numberOfAttacks: 1
+    numberOfAttacks: 0
   item: {fileID: 0}
   itemStats:
     armor: 0
